@@ -98,6 +98,11 @@ function tmom_start {
     npm run dev
 }
 
+# VIM open all diff files
+function vim-diff {
+    vim -p $(git diff --name-only)
+}
+
 # Docker Machine
 alias dochector='docker-machine start hector'
 alias dochecenv='eval $(docker-machine env hector)'
